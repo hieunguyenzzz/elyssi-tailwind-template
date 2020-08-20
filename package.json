@@ -1,0 +1,27 @@
+{
+    "name": "elyssi-html",
+    "version": "1.0.0",
+    "author": "Tailwind Made",
+    "private": true,
+    "scripts": {
+        "css": "postcss assets/styles/main.css -o assets/styles/main.min.css",
+        "server-reload": "browser-sync start --config './browser-sync-config.js'",
+        "develop": "cross-env NODE_ENV=development concurrently 'npm:css -- --watch' 'npm:server-reload'",
+        "build": "cross-env NODE_ENV=production npm run css"
+    },
+    "browserslist": [
+        "last 2 versions", "> 1%"
+    ],
+    "dependencies": {
+        "@tailwindcss/custom-forms": "^0.2.1",
+        "autoprefixer": "^9.8.0",
+        "browser-sync": "^2.26.7",
+        "concurrently": "^5.2.0",
+        "cross-env": "^7.0.2",
+        "postcss-clean": "^1.1.0",
+        "postcss-cli": "^7.1.1",
+        "postcss-nested": "^4.2.1",
+        "tailwindcss": "^1.4.6",
+        "tailwindcss-gradients": "^3.0.0"
+    }
+}

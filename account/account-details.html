@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8" />
+
+    <meta content="IE=edge,chrome=1"
+          http-equiv="X-UA-Compatible" />
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport" />
+
+    <title>Account Details | Elyssi Template</title>
+
+    <meta property="og:title"
+          content="Account Details | Elyssi Template" />
+
+    <meta property="og:locale"
+          content="en_US" />
+
+    <link rel="canonical"
+          href="https://elyssi.tailwindmade.com/account/account-details" />
+
+    <meta property="og:url"
+          content="https://elyssi.tailwindmade.com/account/account-details" />
+
+    <meta name="description"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+    <meta property="og:site_name"
+          content="Elyssi Template" />
+
+    <meta property="og:image"
+          content="https://elyssi.tailwindmade.com/assets/img/social.jpg" />
+
+    <link rel="icon"
+          type="image/png"
+          href="/assets/img/favicon.png" />
+
+    <meta name="twitter:card"
+          content="summary_large_image" />
+
+    <meta name="twitter:site"
+          content="@tailwindmade" />
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+          integrity="sha256-imWjOiEEAcjWdL1+inhBu1dWYFyXuiO9vpJVEQd3y/c="
+          crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+          href="/assets/styles/fonts.css"
+          media="screen"
+          crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+          href="/assets/styles/main.min.css"
+          media="screen"
+          crossorigin="anonymous" />
+</head>
+
+
+    <body x-data="{ modal: false, mobileMenu: false }"
+          :class="{ 'overflow-hidden max-h-screen': modal || mobileMenu }">
+        <div id="main">
+            <div class="container py-10 relative">
+    <div class="flex justify-between items-center">
+        <div class="hidden lg:block">
+            <div class="flex items-center">
+                <a href="/"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 mr-8 group">
+                    <img src="/assets/img/icons/icon-search.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon search" />
+                    <img src="/assets/img/icons/icon-search-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon search hover" />
+                </a>
+
+                <a href="/account/wishlist/"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 group">
+                    <img src="/assets/img/icons/icon-heart.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon heart" />
+                    <img src="/assets/img/icons/icon-heart-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon heart hover" />
+                </a>
+            </div>
+        </div>
+        <a href="/">
+            <img src="/assets/img/logo-elyssi.svg"
+                 class="w-48 h-auto"
+                 alt="logo" />
+        </a>
+        <div class="hidden lg:block">
+            <div class="flex items-center">
+                <a href="/account/dashboard"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 group">
+                    <img src="/assets/img/icons/icon-user.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon user" />
+                    <img src="/assets/img/icons/icon-user-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon user hover" />
+                </a>
+
+                <a href="/cart"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 ml-8 group">
+                    <img src="/assets/img/icons/icon-cart.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon cart" />
+                    <img src="/assets/img/icons/icon-cart-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon cart hover" />
+                </a>
+            </div>
+        </div>
+        <div class="block lg:hidden">
+            <i class="bx bx-menu text-primary text-3xl"
+               @click="mobileMenu = true"></i>
+        </div>
+    </div>
+    <div class="flex justify-center lg:pt-8">
+        <ul class="list-reset flex items-center">
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">Home</a>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/about"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">About</a>
+            </li>
+            
+            
+            
+            <li class="mr-10 hidden lg:block group">
+                <div
+                     class="border-b-2 border-white transition-colors group-hover:border-primary flex items-center">
+                    <span
+                          class="cursor-pointer text-lg font-hkregular group-hover:font-hkbold text-secondary group-hover:text-primary px-2 transition-all">Collections</span>
+                    <i
+                       class="bx bx-chevron-down text-secondary group-hover:text-primary pl-2 px-2 transition-colors"></i>
+                </div>
+                <div
+                     class="pt-10 absolute mt-40 top-0 left-0 right-0 -z-1 group-hover:z-50 w-2/3 mx-auto">
+                    <div
+                         class="opacity-0 pointer-events-none  group-hover:opacity-100 group-hover:pointer-events-auto   transition-all flex bg-white shadow-lg p-8 rounded-b relative ">
+                        
+                        <div class="flex-1 relative z-20">
+                            <h4
+                                class="font-hkbold text-base text-secondary mb-2">
+                                Man
+                            </h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Boots</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Blutcher Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Chelsea Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Chukka Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Dress Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Work Boot</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="flex-1 relative z-20">
+                            <h4
+                                class="font-hkbold text-base text-secondary mb-2">
+                                Woman
+                            </h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Accessories</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="flex-1 relative z-20">
+                            <h4
+                                class="font-hkbold text-base text-secondary mb-2">
+                                Kids
+                            </h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Derby Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="z-0 bg-contain bg-right-bottom bg-no-repeat absolute inset-0"
+                                 style="background-image: url(https://source.unsplash.com/1000x640/?enu)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/blog"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">Blog</a>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/contact#faq"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">FAQ</a>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/contact"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">Contact</a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+<div class="fixed inset-0 flex z-50 justify-end opacity-0 pointer-events-none   transition-all"
+     :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
+    <div class="bg-black opacity-50 absolute inset-0 z-10"
+         @click="mobileMenu = false"></div>
+    <div
+         class="w-2/3 md:w-1/2 z-20 h-full absolute shadow bg-primary-lightest overflow-auto flex flex-col">
+        <span class=" ml-auto p-2"
+              @click="mobileMenu = false"><i
+               class="bx bx-x text-secondary text-3xl"></i></span>
+        <ul>
+            
+            
+            <li>
+                <a href="/"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Home</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/about"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">About</a>
+            </li>
+            
+            
+            
+            <li class="flex justify-between flex-col"
+                x-data="{ categories: false }"
+                @click.away="{ categories = false }">
+                <div class="flex justify-between border-t border-grey-darker">
+                    <span
+                          class="p-3 uppercase text-secondary  block">Categories</span>
+                    <span class="p-3 border-l border-grey-darker"
+                          @click="categories = !categories">
+                        <i class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"
+                           :class="{ 'bxs-up-arrow': categories }"></i></span>
+                </div>
+                <div class="bg-primary-lighter overflow-hidden   transition-all item-height"
+                     :class="{ 'active': categories }">
+                    
+                    <div x-data="{ subcategory: false }"
+                         @click.away="{ subcategory = false }">
+                        <div
+                             class="flex justify-between border-t border-grey-darker">
+                            <span
+                                  class="p-3 uppercase text-secondary  block">Man</span>
+                            <span class="p-3 border-l border-grey-darker"
+                                  @click="subcategory = !subcategory"><i
+                                   class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"></i></span>
+                        </div>
+                        <div class="mobile-menu-categories bg-v-v-pink max-h-0 overflow-hidden   transition-all item-height"
+                             :class="{ 'active': subcategory }">
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Boots</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Blutcher Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Chelsea Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Chukka Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Dress Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Work Boot</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div x-data="{ subcategory: false }"
+                         @click.away="{ subcategory = false }">
+                        <div
+                             class="flex justify-between border-t border-grey-darker">
+                            <span
+                                  class="p-3 uppercase text-secondary  block">Woman</span>
+                            <span class="p-3 border-l border-grey-darker"
+                                  @click="subcategory = !subcategory"><i
+                                   class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"></i></span>
+                        </div>
+                        <div class="mobile-menu-categories bg-v-v-pink max-h-0 overflow-hidden   transition-all item-height"
+                             :class="{ 'active': subcategory }">
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Accessories</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div x-data="{ subcategory: false }"
+                         @click.away="{ subcategory = false }">
+                        <div
+                             class="flex justify-between border-t border-grey-darker">
+                            <span
+                                  class="p-3 uppercase text-secondary  block">Kids</span>
+                            <span class="p-3 border-l border-grey-darker"
+                                  @click="subcategory = !subcategory"><i
+                                   class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"></i></span>
+                        </div>
+                        <div class="mobile-menu-categories bg-v-v-pink max-h-0 overflow-hidden   transition-all item-height"
+                             :class="{ 'active': subcategory }">
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Derby Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/blog"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Blog</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/contact#faq"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">FAQ</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/contact"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Contact</a>
+            </li>
+            
+            
+            <li>
+                <a href="/account/dashboard"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Account</a>
+            </li>
+            <li>
+                <a href="/cart"
+                   class="p-3 uppercase text-secondary border-t border-b border-grey-darker block">Cart</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+            <div>
+                <!-- unibeautify:enable -->
+
+
+<div class="container border-t border-grey-dark">
+    <div
+         class="pt-10 sm:pt-12 pb-16 sm:pb-20 lg:pb-24 flex flex-col lg:flex-row justify-between">
+        <div class="lg:w-1/4">
+    <p
+       class="font-butlerregular text-secondary text-2xl sm:text-3xl lg:text-4xl pb-6">
+        My Account</p>
+    <div class="pl-3 flex flex-col">
+        
+        
+        <a href="/account/dashboard"
+           class="  transition-all hover:font-hkbold hover:text-primary px-4 py-3 border-l-2 border-primary-lighter hover:border-primary  font-hkregular text-grey-darkest ">Dashboard</a>
+        
+        
+        <a href="/account/orders"
+           class="  transition-all hover:font-hkbold hover:text-primary px-4 py-3 border-l-2 border-primary-lighter hover:border-primary  font-hkregular text-grey-darkest ">Orders</a>
+        
+        
+        <a href="/account/wishlist"
+           class="  transition-all hover:font-hkbold hover:text-primary px-4 py-3 border-l-2 border-primary-lighter hover:border-primary  font-hkregular text-grey-darkest ">Wishlist</a>
+        
+        
+        <a href="/account/account-details"
+           class="  transition-all hover:font-hkbold hover:text-primary px-4 py-3 border-l-2 border-primary-lighter hover:border-primary  font-hkbold text-primary border-primary ">Account Details</a>
+        
+    </div>
+    <a href="/"
+       class="  transition-all border hover:bg-primary hover:text-white border-primary rounded px-8 py-3 mt-8 inline-block font-hkbold text-primary">Log
+        Out</a>
+</div>
+
+
+        <div class="lg:w-3/4 mt-12 lg:mt-0">
+            <div class="bg-grey-light py-10 px-6 sm:px-10">
+                <h1
+                    class="font-hkbold text-secondary text-2xl sm:text-left mb-12">
+                    Account Details
+                </h1>
+                <div class="bg-no-repeat bg-cover bg-center h-40 w-40 rounded-full mb-12"
+                     style="background-image:url(https://source.unsplash.com/1000x640/?hor)">
+                </div>
+
+                <form>
+                    <div
+                         class="flex flex-col sm:flex-row justify-between sm:mb-8 -mx-5">
+                        <div class="sm:w-1/2 px-5">
+                            <label for="first_name"
+                                   class="font-hkregular text-secondary block mb-2">First
+                                Name</label>
+                            <input type="text"
+                                   class="form-input mb-8 sm:mb-0"
+                                   value=""
+                                   id="first_name" />
+                        </div>
+                        <div class="sm:w-1/2 px-5">
+                            <label for="last_name"
+                                   class="font-hkregular text-secondary block mb-2">Last
+                                Name</label>
+                            <input type="text"
+                                   class="form-input mb-8 sm:mb-0"
+                                   value=""
+                                   id="last_name" />
+                        </div>
+                    </div>
+                    <div
+                         class="flex flex-col sm:flex-row justify-between sm:mb-8 -mx-5">
+                        <div class="sm:w-1/2 px-5">
+                            <label for="name_displayed"
+                                   class="font-hkregular text-secondary block mb-2">Name
+                                Displayed*</label>
+                            <input type="text"
+                                   class="form-input mb-8 sm:mb-0"
+                                   value=""
+                                   id="name_displayed" />
+                        </div>
+                        <div class="sm:w-1/2 px-5">
+                            <label for="email"
+                                   class="font-hkregular text-secondary block mb-2">Email
+                                Address*</label>
+                            <input type="email"
+                                   class="form-input mb-8 sm:mb-0"
+                                   value=""
+                                   id="email" />
+                        </div>
+                    </div>
+
+                    <div class="sm:w-1/2 pr-5">
+                        <label for="password"
+                               class="font-hkregular text-secondary block mb-2">Password*</label>
+                        <input type="password"
+                               class="form-input"
+                               value="password"
+                               id="password" />
+                    </div>
+
+                    <div class="my-8">
+                        <div>
+                            <h4
+                                class="font-hkbold text-secondary text-xl sm:text-left mb-2">
+                                Shipping Address
+                            </h4>
+                            <div
+                                 class="flex flex-col sm:flex-row justify-between mb-4 -mx-5">
+                                <div class="sm:w-1/2 px-5">
+                                    <label for="street"
+                                           class="font-hkregular text-secondary block mb-2">Street</label>
+                                    <input type="text"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="street" />
+                                </div>
+                                <div class="sm:w-1/2 px-5">
+                                    <label for="street2"
+                                           class="font-hkregular text-secondary block mb-2">Street
+                                        2</label>
+                                    <input type="email"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="street2" />
+                                </div>
+                            </div>
+                            <div
+                                 class="flex flex-col sm:flex-row justify-between mb-4 -mx-5">
+                                <div class="sm:w-1/3 px-5">
+                                    <label for="city"
+                                           class="font-hkregular text-secondary block mb-2">City</label>
+                                    <input type="text"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="city" />
+                                </div>
+                                <div class="sm:w-1/3 px-5">
+                                    <label for="state"
+                                           class="font-hkregular text-secondary block mb-2">State</label>
+                                    <input type="email"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="state" />
+                                </div>
+                                <div class="sm:w-1/3 px-5">
+                                    <label for="zip"
+                                           class="font-hkregular text-secondary block mb-2">Zip
+                                        Code</label>
+                                    <input type="email"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="zip" />
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="country"
+                                       class="font-hkregular text-secondary block mb-2">Country</label>
+                                <select class="form-select"
+                                        id="country">
+                                    <option></option>
+                                    <option value="us">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4
+                                class="font-hkbold text-secondary text-xl sm:text-left mb-2">
+                                Billing Address
+                            </h4>
+                            <div
+                                 class="flex flex-col sm:flex-row justify-between mb-4 -mx-5">
+                                <div class="sm:w-1/2 px-5">
+                                    <label for="bstreet"
+                                           class="font-hkregular text-secondary block mb-2">Street</label>
+                                    <input type="text"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="bstreet" />
+                                </div>
+                                <div class="sm:w-1/2 px-5">
+                                    <label for="bstreet2"
+                                           class="font-hkregular text-secondary block mb-2">Street
+                                        2</label>
+                                    <input type="email"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="bstreet2" />
+                                </div>
+                            </div>
+                            <div
+                                 class="flex flex-col sm:flex-row justify-between mb-4 -mx-5">
+                                <div class="sm:w-1/3 px-5">
+                                    <label for="bcity"
+                                           class="font-hkregular text-secondary block mb-2">City</label>
+                                    <input type="text"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="bcity" />
+                                </div>
+                                <div class="sm:w-1/3 px-5">
+                                    <label for="bstate"
+                                           class="font-hkregular text-secondary block mb-2">State</label>
+                                    <input type="email"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="bstate" />
+                                </div>
+                                <div class="sm:w-1/3 px-5">
+                                    <label for="bzip"
+                                           class="font-hkregular text-secondary block mb-2">Zip
+                                        Code</label>
+                                    <input type="email"
+                                           class="form-input mb-4 sm:mb-0"
+                                           id="bzip" />
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="bcountry"
+                                       class="font-hkregular text-secondary block mb-2">Country</label>
+                                <select class="form-select"
+                                        id="bcountry">
+                                    <option></option>
+                                    <option value="us">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary"
+                                aria-label="Save button">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-28">
+    <div class="bg-center bg-no-repeat bg-cover"
+         style="background-image:url(/assets/img/bg-cta.png)">
+        <div class="py-16 md:py-20 text-center">
+            <h3
+                class="font-butlerregular text-white text-3xl sm:text-4xl tracking-wide">
+                Let's keep in touch</h3>
+            <p class="font-hkregular text-white text-lg sm:text-xl pt-3 px-6">
+                Join our list and save 15% off your first order.</p>
+            <form class="pt-10 sm:pt-12">
+                <div
+                     class="w-5/6 sm:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto flex flex-col sm:flex-row justify-center items-center">
+                    <label for="cta_email"
+                           class="block relative h-0 w-0 overflow-hidden">Email</label>
+                    <input type="email"
+                           name="cta_email"
+                           id="cta_email"
+                           placeholder="ENTER YOUR EMAIL"
+                           class="form-input bg-transparent text-sm text-white border-white uppercase" />
+                    <button type="button"
+                            class="btn btn-primary sm:ml-5 mt-4 sm:mt-0 w-full sm:w-auto"
+                            aria-label="Subscribe button">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+
+            <div class="bg-center bg-no-repeat bg-cover"
+     style="background-image:url(/assets/img/bg-footer.png)">
+    <div class="container py-16 sm:py-20 md:py-24">
+        <div
+             class="w-5/6 mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div class="text-center lg:text-left">
+                <h4 class="font-hkbold text-white text-xl pb-8">Contact</h4>
+                <ul class="list-reset">
+                    
+                    <li class="pb-2 block">
+                        <a href="mailto:test.email0123@elyssi.com"
+                           class="font-hkregular text-white transition-colors hover:text-primary text-base tracking-wide">test.email0123@elyssi.com</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="tel:0123234222"
+                           class="font-hkregular text-white transition-colors hover:text-primary text-base tracking-wide">0123 234 222</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="https://elyssi.tailwindmade.com"
+                           class="font-hkregular text-white transition-colors hover:text-primary text-base tracking-wide">Elyssi</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="text-center py-16 lg:py-0">
+                <a href="/"
+                   class="font-butlerregular text-white text-4xl uppercase tracking-wider">Elyssi.</a>
+                <div class="flex items-center justify-center pt-5">
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-facebook text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-twitter text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-instagram text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-pinterest text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="text-center lg:text-left">
+                <h4 class="font-hkbold text-white text-xl pb-8">Link</h4>
+                <ul class="list-reset">
+                    
+                    <li class="pb-2 block">
+                        <a href="/collection-list"
+                           class="font-hkregular transition-colors text-white hover:text-primary text-base tracking-wide">Shop</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="/contact"
+                           class="font-hkregular transition-colors text-white hover:text-primary text-base tracking-wide">Contact Us</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="/single"
+                           class="font-hkregular transition-colors text-white hover:text-primary text-base tracking-wide">Terms & Conditions</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-8">
+    <p class="font-hkregular text-secondary text-base text-center">All rights
+        reserved © 2020 Tailwind Made.</p>
+</div>
+
+        </div>
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.3.3/dist/alpine.min.js"
+                defer></script>
+
+        <script src="/assets/js/main.js"></script>
+
+    </body>
+
+</html>

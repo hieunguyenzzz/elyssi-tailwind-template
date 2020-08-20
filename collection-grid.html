@@ -1,0 +1,1685 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8" />
+
+    <meta content="IE=edge,chrome=1"
+          http-equiv="X-UA-Compatible" />
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport" />
+
+    <title>Collection Grid | Elyssi Template</title>
+
+    <meta property="og:title"
+          content="Collection Grid | Elyssi Template" />
+
+    <meta property="og:locale"
+          content="en_US" />
+
+    <link rel="canonical"
+          href="https://elyssi.tailwindmade.com/collection-grid" />
+
+    <meta property="og:url"
+          content="https://elyssi.tailwindmade.com/collection-grid" />
+
+    <meta name="description"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+    <meta property="og:site_name"
+          content="Elyssi Template" />
+
+    <meta property="og:image"
+          content="https://elyssi.tailwindmade.com/assets/img/social.jpg" />
+
+    <link rel="icon"
+          type="image/png"
+          href="/assets/img/favicon.png" />
+
+    <meta name="twitter:card"
+          content="summary_large_image" />
+
+    <meta name="twitter:site"
+          content="@tailwindmade" />
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+          integrity="sha256-imWjOiEEAcjWdL1+inhBu1dWYFyXuiO9vpJVEQd3y/c="
+          crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+          href="/assets/styles/fonts.css"
+          media="screen"
+          crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+          href="/assets/styles/main.min.css"
+          media="screen"
+          crossorigin="anonymous" />
+</head>
+
+
+    <body x-data="{ modal: false, mobileMenu: false }"
+          :class="{ 'overflow-hidden max-h-screen': modal || mobileMenu }">
+        <div id="main">
+            <div class="container py-10 relative">
+    <div class="flex justify-between items-center">
+        <div class="hidden lg:block">
+            <div class="flex items-center">
+                <a href="/"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 mr-8 group">
+                    <img src="/assets/img/icons/icon-search.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon search" />
+                    <img src="/assets/img/icons/icon-search-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon search hover" />
+                </a>
+
+                <a href="/account/wishlist/"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 group">
+                    <img src="/assets/img/icons/icon-heart.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon heart" />
+                    <img src="/assets/img/icons/icon-heart-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon heart hover" />
+                </a>
+            </div>
+        </div>
+        <a href="/">
+            <img src="/assets/img/logo-elyssi.svg"
+                 class="w-48 h-auto"
+                 alt="logo" />
+        </a>
+        <div class="hidden lg:block">
+            <div class="flex items-center">
+                <a href="/account/dashboard"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 group">
+                    <img src="/assets/img/icons/icon-user.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon user" />
+                    <img src="/assets/img/icons/icon-user-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon user hover" />
+                </a>
+
+                <a href="/cart"
+                   class="border-2 transition-all border-transparent hover:border-primary rounded-full px-4 py-4 ml-8 group">
+                    <img src="/assets/img/icons/icon-cart.svg"
+                         class="w-8 h-8 block group-hover:hidden"
+                         alt="icon cart" />
+                    <img src="/assets/img/icons/icon-cart-hover.svg"
+                         class="w-8 h-8 hidden group-hover:block"
+                         alt="icon cart hover" />
+                </a>
+            </div>
+        </div>
+        <div class="block lg:hidden">
+            <i class="bx bx-menu text-primary text-3xl"
+               @click="mobileMenu = true"></i>
+        </div>
+    </div>
+    <div class="flex justify-center lg:pt-8">
+        <ul class="list-reset flex items-center">
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">Home</a>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/about"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">About</a>
+            </li>
+            
+            
+            
+            <li class="mr-10 hidden lg:block group">
+                <div
+                     class="border-b-2 border-white transition-colors group-hover:border-primary flex items-center">
+                    <span
+                          class="cursor-pointer text-lg font-hkregular group-hover:font-hkbold text-secondary group-hover:text-primary px-2 transition-all">Collections</span>
+                    <i
+                       class="bx bx-chevron-down text-secondary group-hover:text-primary pl-2 px-2 transition-colors"></i>
+                </div>
+                <div
+                     class="pt-10 absolute mt-40 top-0 left-0 right-0 -z-1 group-hover:z-50 w-2/3 mx-auto">
+                    <div
+                         class="opacity-0 pointer-events-none  group-hover:opacity-100 group-hover:pointer-events-auto   transition-all flex bg-white shadow-lg p-8 rounded-b relative ">
+                        
+                        <div class="flex-1 relative z-20">
+                            <h4
+                                class="font-hkbold text-base text-secondary mb-2">
+                                Man
+                            </h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Boots</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Blutcher Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Chelsea Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Chukka Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Dress Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Work Boot</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="flex-1 relative z-20">
+                            <h4
+                                class="font-hkbold text-base text-secondary mb-2">
+                                Woman
+                            </h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Accessories</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="flex-1 relative z-20">
+                            <h4
+                                class="font-hkbold text-base text-secondary mb-2">
+                                Kids
+                            </h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Derby Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="text-sm font-hkregular text-secondary-lighter leading-loose border-b border-transparent hover:border-secondary-lighter">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="z-0 bg-contain bg-right-bottom bg-no-repeat absolute inset-0"
+                                 style="background-image: url(https://source.unsplash.com/1000x640/?enu)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/blog"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">Blog</a>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/contact#faq"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">FAQ</a>
+            </li>
+            
+            
+            
+            <li class=" mr-10 hidden lg:block">
+                <a href="/contact"
+                   class="block text-lg font-hkregular hover:font-hkbold   transition-all text-secondary hover:text-primary border-b-2 border-white hover:border-primary px-2">Contact</a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+<div class="fixed inset-0 flex z-50 justify-end opacity-0 pointer-events-none   transition-all"
+     :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
+    <div class="bg-black opacity-50 absolute inset-0 z-10"
+         @click="mobileMenu = false"></div>
+    <div
+         class="w-2/3 md:w-1/2 z-20 h-full absolute shadow bg-primary-lightest overflow-auto flex flex-col">
+        <span class=" ml-auto p-2"
+              @click="mobileMenu = false"><i
+               class="bx bx-x text-secondary text-3xl"></i></span>
+        <ul>
+            
+            
+            <li>
+                <a href="/"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Home</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/about"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">About</a>
+            </li>
+            
+            
+            
+            <li class="flex justify-between flex-col"
+                x-data="{ categories: false }"
+                @click.away="{ categories = false }">
+                <div class="flex justify-between border-t border-grey-darker">
+                    <span
+                          class="p-3 uppercase text-secondary  block">Categories</span>
+                    <span class="p-3 border-l border-grey-darker"
+                          @click="categories = !categories">
+                        <i class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"
+                           :class="{ 'bxs-up-arrow': categories }"></i></span>
+                </div>
+                <div class="bg-primary-lighter overflow-hidden   transition-all item-height"
+                     :class="{ 'active': categories }">
+                    
+                    <div x-data="{ subcategory: false }"
+                         @click.away="{ subcategory = false }">
+                        <div
+                             class="flex justify-between border-t border-grey-darker">
+                            <span
+                                  class="p-3 uppercase text-secondary  block">Man</span>
+                            <span class="p-3 border-l border-grey-darker"
+                                  @click="subcategory = !subcategory"><i
+                                   class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"></i></span>
+                        </div>
+                        <div class="mobile-menu-categories bg-v-v-pink max-h-0 overflow-hidden   transition-all item-height"
+                             :class="{ 'active': subcategory }">
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Boots</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Blutcher Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Chelsea Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Chukka Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Dress Boot</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Work Boot</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div x-data="{ subcategory: false }"
+                         @click.away="{ subcategory = false }">
+                        <div
+                             class="flex justify-between border-t border-grey-darker">
+                            <span
+                                  class="p-3 uppercase text-secondary  block">Woman</span>
+                            <span class="p-3 border-l border-grey-darker"
+                                  @click="subcategory = !subcategory"><i
+                                   class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"></i></span>
+                        </div>
+                        <div class="mobile-menu-categories bg-v-v-pink max-h-0 overflow-hidden   transition-all item-height"
+                             :class="{ 'active': subcategory }">
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Accessories</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div x-data="{ subcategory: false }"
+                         @click.away="{ subcategory = false }">
+                        <div
+                             class="flex justify-between border-t border-grey-darker">
+                            <span
+                                  class="p-3 uppercase text-secondary  block">Kids</span>
+                            <span class="p-3 border-l border-grey-darker"
+                                  @click="subcategory = !subcategory"><i
+                                   class="mt-1 bx bxs-down-arrow text-secondary text-sm pointer-events-none"></i></span>
+                        </div>
+                        <div class="mobile-menu-categories bg-v-v-pink max-h-0 overflow-hidden   transition-all item-height"
+                             :class="{ 'active': subcategory }">
+                            <ul>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Derby Shoes</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Belts</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Caps</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Laces</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/collection-grid"
+                                       class="p-3 uppercase text-secondary border-t border-grey-darker block">Socks</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/blog"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Blog</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/contact#faq"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">FAQ</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/contact"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Contact</a>
+            </li>
+            
+            
+            <li>
+                <a href="/account/dashboard"
+                   class="p-3 uppercase text-secondary border-t border-grey-darker block">Account</a>
+            </li>
+            <li>
+                <a href="/cart"
+                   class="p-3 uppercase text-secondary border-t border-b border-grey-darker block">Cart</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+            <div>
+                <!-- unibeautify:enable -->
+
+<div class="container">
+    <div class="flex relative">
+    <div class="bg-no-repeat bg-cover bg-center w-3/4 ml-auto h-56 sm:h-64 md:h-68"
+         
+         style="background-image:url(https://source.unsplash.com/1000x640/?-04)"
+         >
+    </div>
+    <div class="w-full h-56 sm:h-64 md:h-68 bg-no-repeat bg-cover absolute top-0 left-0"
+         style="background-image: linear-gradient(90deg, rgba(55,36,31,1) 40%, rgba(0,0,0,0) 100%)">
+        <div class="py-20 px-6 sm:px-12 lg:px-20">
+            <h1
+                class="font-butlerregular text-white text-2xl sm:text-3xl md:text-7xl lg:text-5xl">
+                Collection Grid</h1>
+            <div class="flex pt-2">
+                <a href="/"
+                   class="font-hkregular text-white text-base hover:text-primary transition-colors">Home</a>
+                <span class="font-hkregular text-white text-base px-2">.</span>
+                <span
+                      class="font-hkregular text-white text-base">Collection Grid</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="py-10 flex flex-col sm:flex-row justify-between">
+    <div class="flex items-center justify-center sm:justify-start">
+        <i class="bx bxs-filter-alt text-primary text-xl"></i>
+        <p
+           class="font-hkregular text-secondary md:text-lg px-2 leading-none block">
+            Filter </p>
+        <div class="flex items-center border border-grey-darker p-2 rounded">
+            <a href="/collection-list"><i
+                   class="bx bx-menu text-grey-darker hover:text-secondary-light text-xl leading-none block transition-colors"></i></a>
+            <div class="w-px h-4 mx-2 bg-grey-darker"></div>
+            <a href="/collection-grid"><i
+                   class="bx bxs-grid text-grey-darker hover:text-secondary-light text-xl leading-none block transition-colors"></i></a>
+        </div>
+    </div>
+    <div
+         class="flex items-center justify-center sm:justify-end mt-6 sm:mt-0 w-76">
+        <p class="font-hkregular text-secondary md:text-lg mr-2 -mt-2">Sort by:
+        </p>
+
+        <select class="w-2/3 form-select">
+            <option value="0">Best Match</option>
+            <option value="1">Price: Low - High</option>
+            <option value="2">Price: High - Low</option>
+        </select>
+    </div>
+</div>
+
+
+    <div
+         class="flex flex-wrap justify-between pb-6 lg:pb-10 xl:pb-12 sm:-px-3 md:-mx-5">
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-1)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-green text-sm uppercase tracking-wide">
+                        New
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Cat eye</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$75.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-2)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-blue text-sm uppercase tracking-wide">
+                        trend
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Floral Chick</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$50.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-3)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-primary-light text-sm uppercase tracking-wide">
+                        25%
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Coffee Cream</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$65.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?k-1)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-red text-sm uppercase tracking-wide">
+                        Hot
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Black Blake</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$115.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?k-2)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-green text-sm uppercase tracking-wide">
+                        New
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Woody Blake</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$110.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?k-3)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-blue text-sm uppercase tracking-wide">
+                        Trend
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Party Blake</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$130.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?k-4)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-primary-light text-sm uppercase tracking-wide">
+                        25%
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Not Ballerina Blake</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$115.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-1)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-red text-sm uppercase tracking-wide">
+                        Hot
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Cocktail Vans</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$33.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-2)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-green text-sm uppercase tracking-wide">
+                        New
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            WW Vans</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$35.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-3)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-blue text-sm uppercase tracking-wide">
+                        trend
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Classic Beige</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$30.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?s-4)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-primary-light text-sm uppercase tracking-wide">
+                        25%
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Siberian Boots</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$67.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?h-1)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-red text-sm uppercase tracking-wide">
+                        Hot
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Submarine Watch</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$120.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?h-2)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-green text-sm uppercase tracking-wide">
+                        New
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Rose Gold Watch</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$135.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?h-3)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-blue text-sm uppercase tracking-wide">
+                        Trend
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Silver One Watch</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$137.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?h-4)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-primary-light text-sm uppercase tracking-wide">
+                        25%
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Princess</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$145.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div
+             class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 relative group pb-12 lg:last:hidden xl:last:block">
+            <div class="sm:px-3 md:px-5">
+                <div class="relative rounded flex justify-center items-center">
+                    <div class="w-full h-68 bg-center bg-no-repeat bg-cover"
+                         style="background-image:url(https://source.unsplash.com/1000x640/?h-5)">
+                    </div>
+                    <span
+                          class="absolute top-0 right-0 bg-white px-5 py-1 mt-4 mr-4 rounded-full font-hkbold text-v-red text-sm uppercase tracking-wide">
+                        Hot
+                    </span>
+                    <div
+                         class="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-85 pointer-events-none group-hover:pointer-events-auto transition-all overflow-hidden rounded">
+                    </div>
+                    <div
+                         class="absolute opacity-0 transition-opacity group-hover:opacity-100 flex justify-center items-center py-28 inset-0 group">
+                        <a href="/cart"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-cart.svg "
+                                 class="h-6 w-6"
+                                 alt="icon cart" />
+                        </a>
+                        <a href="/product"
+                           class="bg-white hover:bg-primary-light rounded-full px-3 py-3 flex items-center transition-all mr-3">
+                            <img src="/assets/img/icons/icon-search.svg"
+                                 class="h-6 w-6"
+                                 alt="icon search" />
+                        </a>
+                        <a href="/account/wishlist/"
+                           class="bg-white hover:bg-primary-light  rounded-full px-3 py-3 flex items-center transition-all ">
+                            <img src="/assets/img/icons/icon-heart.svg"
+                                 class="h-6 w-6"
+                                 alt="icon heart" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center pt-6">
+                    <div>
+                        <h3 class="font-hkregular text-base text-secondary">
+                            Silver One for Men</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                                <i class="bx bxs-star text-primary"></i>
+                            </div>
+                            <p
+                               class="font-hkregular text-sm text-secondary ml-2">
+                                (45)</p>
+                        </div>
+                    </div>
+                    <span
+                          class="font-hkbold text-primary text-xl">$140.0</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="pb-16 flex justify-center mx-auto">
+        <span
+      class="font-hksemibold text-grey-darkest transition-colors hover:text-black pr-5 cursor-pointer">Previous</span>
+<span
+      class="font-hksemibold text-black transition-colors hover:text-white text-sm hover:bg-primary h-6 w-6 rounded-full flex items-center justify-center mr-3 cursor-pointer">1</span>
+<span class="font-hksemibold text-black transition-colors hover:text-white text-sm hover:bg-primary h-6 w-6 rounded-full flex items-center
+    justify-center mr-3 cursor-pointer">2</span>
+<span class="font-hksemibold text-black transition-colors hover:text-white text-sm hover:bg-primary h-6 w-6 rounded-full flex items-center
+    justify-center cursor-pointer">3</span>
+<span
+      class=" font-hksemibold text-grey-darkest transition-colors hover:text-black pl-5 cursor-pointer">Next</span>
+
+    </div>
+</div>
+
+<div class="container mb-28">
+    <div class="bg-center bg-no-repeat bg-cover"
+         style="background-image:url(/assets/img/bg-cta.png)">
+        <div class="py-16 md:py-20 text-center">
+            <h3
+                class="font-butlerregular text-white text-3xl sm:text-4xl tracking-wide">
+                Let's keep in touch</h3>
+            <p class="font-hkregular text-white text-lg sm:text-xl pt-3 px-6">
+                Join our list and save 15% off your first order.</p>
+            <form class="pt-10 sm:pt-12">
+                <div
+                     class="w-5/6 sm:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto flex flex-col sm:flex-row justify-center items-center">
+                    <label for="cta_email"
+                           class="block relative h-0 w-0 overflow-hidden">Email</label>
+                    <input type="email"
+                           name="cta_email"
+                           id="cta_email"
+                           placeholder="ENTER YOUR EMAIL"
+                           class="form-input bg-transparent text-sm text-white border-white uppercase" />
+                    <button type="button"
+                            class="btn btn-primary sm:ml-5 mt-4 sm:mt-0 w-full sm:w-auto"
+                            aria-label="Subscribe button">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+
+            <div class="bg-center bg-no-repeat bg-cover"
+     style="background-image:url(/assets/img/bg-footer.png)">
+    <div class="container py-16 sm:py-20 md:py-24">
+        <div
+             class="w-5/6 mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div class="text-center lg:text-left">
+                <h4 class="font-hkbold text-white text-xl pb-8">Contact</h4>
+                <ul class="list-reset">
+                    
+                    <li class="pb-2 block">
+                        <a href="mailto:test.email0123@elyssi.com"
+                           class="font-hkregular text-white transition-colors hover:text-primary text-base tracking-wide">test.email0123@elyssi.com</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="tel:0123234222"
+                           class="font-hkregular text-white transition-colors hover:text-primary text-base tracking-wide">0123 234 222</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="https://elyssi.tailwindmade.com"
+                           class="font-hkregular text-white transition-colors hover:text-primary text-base tracking-wide">Elyssi</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="text-center py-16 lg:py-0">
+                <a href="/"
+                   class="font-butlerregular text-white text-4xl uppercase tracking-wider">Elyssi.</a>
+                <div class="flex items-center justify-center pt-5">
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-facebook text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-twitter text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-instagram text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.google.com"
+                       class="group">
+                        <span class="sr-only">Social link</span>
+                        <div
+                             class="bg-white group-hover:bg-primary rounded-full px-2 py-2 flex items-center mr-5 transition-colors">
+                            <i
+                               class="bx bxl-pinterest text-secondary transition-colors group-hover:text-white"></i>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="text-center lg:text-left">
+                <h4 class="font-hkbold text-white text-xl pb-8">Link</h4>
+                <ul class="list-reset">
+                    
+                    <li class="pb-2 block">
+                        <a href="/collection-list"
+                           class="font-hkregular transition-colors text-white hover:text-primary text-base tracking-wide">Shop</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="/contact"
+                           class="font-hkregular transition-colors text-white hover:text-primary text-base tracking-wide">Contact Us</a>
+                    </li>
+                    
+                    <li class="pb-2 block">
+                        <a href="/single"
+                           class="font-hkregular transition-colors text-white hover:text-primary text-base tracking-wide">Terms & Conditions</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-8">
+    <p class="font-hkregular text-secondary text-base text-center">All rights
+        reserved © 2020 Tailwind Made.</p>
+</div>
+
+        </div>
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.3.3/dist/alpine.min.js"
+                defer></script>
+
+        <script src="/assets/js/main.js"></script>
+
+    </body>
+
+</html>
